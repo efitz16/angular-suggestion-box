@@ -33,7 +33,7 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
   <main ng-controller="HomeController">
-  <div ng-repeat="post in posts">
+  <div ng-repeat="post in posts | orderBy: '-upvotes'">
     <p><span>{{post.upvotes}}</span> {{ post.title }}</p>
     <ul ng-repeat="comment in post.comments">
       <li>{{ comment }}</li>
