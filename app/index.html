@@ -39,10 +39,17 @@
       <li>{{ comment }}</li>
     </ul>
   </div>
-
-  <form ng-submit="addSuggestion()">
-    
-  </form>
+  <div class="container">
+    <div class="row">
+      <form ng-submit="addSuggestion()" class="col s12">
+        <h3>Submit your suggestion</h3>
+        <div class="row">
+          <input type="text" placeholder="Suggestions here" ng-model="title" class="col s12">
+          <button type="submit" class="btn center-align">Suggest</button>
+        </div>
+      </form>
+    </div>
+  </div>
 
   <!-- <div ng-view></div> -->
 </main>
