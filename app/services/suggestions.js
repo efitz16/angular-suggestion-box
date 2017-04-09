@@ -14,7 +14,7 @@ app.factory('suggestions', [function() {
 	    {
 	    title: 'Retrofit water fountain with Gatorade',
 	    upvotes: 7,
-	    comments: [],
+	    comments: [{body: 'Gross', upvotes: 0}, {body: 'Whatever. You\'re weird', upvotes: 6} ],
 	    },
 	    {
 	    title: 'Sing Bon Jovi\'s "Living on a Prayer" halfway through meetings',
