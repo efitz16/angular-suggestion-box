@@ -1,1 +1,19 @@
-hai
+<div class="container">
+  <div ng-repeat="comment in post.comments | orderBy: '-upvotes'">
+    <p>
+    	<span class="btn-floating waves-effect waves-light" ng-click="upVote(comment)">
+    		<i class="material-icons">add</i>
+    	</span>
+    	<span>{{comment.upvotes}}</span>
+    	{{comment.body}}
+    </p>
+  </div>
+  
+  <div class="row">
+  	<form ng-submit="addComment()">
+  		<h3>Add a comment</h3>
+  		<input type="text" placeholder="Comment here" ng-model="commentBody">
+  		<button type="submit" class="btn center-align">Submit</button>
+  	</form>
+  </div>
+</div>
